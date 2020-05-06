@@ -26,7 +26,10 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
-
+	<style>
+		@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+		.jg{font-family: 'Jeju Gothic', sans-serif;}
+	</style>
 </head>
 <body>
 
@@ -35,36 +38,52 @@
 			<form class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					<!-- Send Us A Message -->
-					<b>제작문의 및 신청</b>
+					<b>상담 및 방문신청</b>
 				</span>
 
-				<label class="label-input100" for="first-name"><b>NAME *</b></label>
+				<label class="label-input100" for="company-name"><p class="jg"><b>회사명 *</b></p></label>
+				<div class="wrap-input100 validate-input" data-validate="Type company name">
+					<input id="company-name" class="input100" type="text" name="company-name" placeholder="ex. 신세계 아이앤씨">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="full-name"><p class="jg"><b>이름 / 직책 *</b></p></label>
 				<div class="wrap-input100 validate-input" data-validate="Type full name">
-					<input id="full-name" class="input100" type="text" name="first-name" placeholder="Eg. 홍길동">
+					<input id="full-name" class="input100" type="text" name="full-name" placeholder="ex. 홍길동 / 담당">
 					<span class="focus-input100"></span>
 				</div>
 
-				<label class="label-input100" for="email"><b>EMAIL *</b></label>
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
-					<span class="focus-input100"></span>
-				</div>
-
-				<label class="label-input100" for="Contact"><b>ENTER Contact number</b> </label>
+				<label class="label-input100" for="Contact"><p class="jg"><b>전화번호</b></p></label>
 				<div class="wrap-input100">
-					<input id="Contact" class="input100" type="text" name="Contact" placeholder="Eg. 010 - 1234 - 1234">
+					<input id="Contact" class="input100" type="text" name="Contact" placeholder="ex. 02 - 1234 - 1234">
 					<span class="focus-input100"></span>
 				</div>
 
-				<label class="label-input100" for="message"><b>Message *</b></label>
+				<label class="label-input100" for="email"><p class="jg"><b>이메일 *</b></p></label>
+				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<input id="email" class="input100" type="text" name="email" placeholder="ex. example@email.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="message"><p class="jg"><b>문의내용 *</b></p></label>
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+					<textarea id="message" class="input100" name="message" placeholder="문의할 내용을 적어주세요."></textarea>
 					<span class="focus-input100"></span>
 				</div>
 				
 				<div>
 					<input id="checkbox" class="checkbox-custom" name="checkbox" type="checkbox">
-					<label for="checkbox" class="checkbox-custom-label"><b>개인정보 취급방침에 동의합니다</b></label>
+					<label for="checkbox" class="checkbox-custom-label"><b>개인정보 제3자 제공 동의</b></label>
+					<p class="jg">귀하가 기재해준 개인정보에 대해서  아래와 같이 Amazon Web Services. Inc 는 이용자의 개인정보를 ㈜신세계아이앤씨에 제공합니다.<br/><br/>
+						
+						1. 제공 받는 자 : ㈜신세계아이앤씨<br/>
+						2. 제공 항목 및 제공 받는 자의 이용 목적<br/>
+						 -  개인정보를 제공받는 자의 개인정보 이용 목적 : 영업관리, 설문조사 및 프로모션, 이벤트 경품 제공-행사 관련 마케팅, 서비스 홍보 및 마케팅<br/>
+						 -  제공하는 개인정보 항목: 이름, 이메일주소, 회사명, 직무/직책, 연락처<br/>
+						3. 제공 받는 자의 보유 및 이용기간 : 동의 후 1년<br/><br/>
+						
+						이용자는 개인정보의 제3자 제공 동의를 거부할 권리가 있습니다.<br/>
+						</p>
 				  </div>
 
 				<div class="container-contact100-form-btn">
